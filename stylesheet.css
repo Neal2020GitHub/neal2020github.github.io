@@ -88,15 +88,6 @@ a:hover {
   color: #f09228;
 }
 
-.news-less-label,
-.news-more[open] .news-more-label {
-  display: none;
-}
-
-.news-more[open] .news-less-label {
-  display: inline;
-}
-
 body,
 td,
 th,
