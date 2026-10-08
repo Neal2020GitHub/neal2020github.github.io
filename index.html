@@ -6,6 +6,11 @@
   <meta name="author" content="Zhifeng Gu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261008">
+  <style>
+    .news-more .news-open-label,
+    .news-more[open] .news-closed-label { display: none; }
+    .news-more[open] .news-open-label { display: inline; }
+  </style>
 
   <link rel="icon" type="image/jpg" href="images/icon.jpg">
 
@@ -63,7 +68,7 @@
                 <li>[06/2025] One paper is accepted to <a href="https://iccv.thecvf.com/Conferences/2025">ICCV 2025</a>.</li>
               </ul>
               <details class="news-more">
-                <summary>Show more</summary>
+                <summary><span class="news-closed-label">Show more</span><span class="news-open-label">Show less</span></summary>
                 <ul style="margin-top:4px; padding-left:20px; line-height:1.6;">
                   <li>[09/2023] Join <a href="https://www.polyu.edu.hk/">PolyU</a> at <a href="https://bingcs.github.io/people/">Spatial Intelligence Group</a>.</li>
                   <li>[06/2023] Graduate from <a href="https://www.buaa.edu.cn/">BUAA</a> as an <strong>Outstanding Graduate</strong>.</li>
@@ -207,12 +212,6 @@
       </td>
     </tr>
   </table>
-  <script>
-    const newsMore = document.querySelector('.news-more');
-    newsMore.addEventListener('toggle', () => {
-      newsMore.querySelector('summary').textContent = newsMore.open ? 'Show less' : 'Show more';
-    });
-  </script>
 </body>
 
 </html>
