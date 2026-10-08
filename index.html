@@ -207,6 +207,12 @@
       </td>
     </tr>
   </table>
+  <script>
+    const newsMore = document.querySelector('.news-more');
+    newsMore.addEventListener('toggle', () => {
+      newsMore.querySelector('summary').textContent = newsMore.open ? 'Show less' : 'Show more';
+    });
+  </script>
 </body>
 
 </html>
